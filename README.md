@@ -18,8 +18,8 @@ https://www.coolapk.com/feed/18776185?shareKey=OGZiNDNkYzIzOWQxNWViOWVmNDA~&shar
 如果你有python编译器，请看这  
   
 接下来在python编译器输入我的代码  
-修改这几项  
-建议用pycharm  
+  
+  修改这几项（建议用pycharm）  
 
 ![源代码](https://shop.io.mi-img.com/app/shop/img?id=shop_02b9a64b7232012c80352b4ca91e6592.png)  
 
@@ -27,8 +27,8 @@ https://www.coolapk.com/feed/18776185?shareKey=OGZiNDNkYzIzOWQxNWViOWVmNDA~&shar
 
 ***
 如果你没有编译环境请运行我打包的exe文件  
-填入账号，密码和链接  
-可用ctrl+c复制好链接粘贴进去  
+  
+填入账号，密码和链接可用ctrl+c复制好链接粘贴进去）  
   
   ![结果](https://shop.io.mi-img.com/app/shop/img?id=shop_c684b0ac7c4c8467d4de9a343204fc85.png)  
   
