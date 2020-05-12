@@ -94,7 +94,7 @@ def getScore(target, id, d_url):
     html = etree.HTML(respond.text)
     score = html.xpath(score_x)
     workIds = html.xpath(hre)[::2] if len(html.xpath(hre)) == 4 else html.xpath(hre)
-    if len(score) < workIds:
+    if len(score) < len(workIds):
         workIds = workIds[:1]
     # id是否是你的，是就说明他给你大的分
     for score_, id_ in zip(score, workIds):
@@ -103,16 +103,22 @@ def getScore(target, id, d_url):
 
 
 def main():
-    user_name = input('请输入手机号：')
-    pass_word = input('请输入密码：')
-    s_url = input('请输入成绩页面的url：')
-    d_url = input('请输入互评页面的url：')
-    if login(user_name, pass_word) == 1:
-        print('查询中！请耐心等待！')
-        # 获取评分人
-        target = getTarget(d_url)
-        print('评分对象获取成功！正在查询他的信息！')
-        getNameScore(target, s_url, d_url)
+    try:
+        user_name = input('请输入手机号：')
+        pass_word = input('请输入密码：')
+        s_url = input('请输入成绩页面的url：')
+        d_url = input('请输入互评页面的url：')
+        if login(user_name, pass_word) == 1:
+            print('查询中！请耐心等待！')
+            # 获取评分人
+            target = getTarget(d_url)
+            print('评分对象获取成功！正在查询他的信息！')
+            getNameScore(target, s_url, d_url)
+        input('wait')
+    except BaseException as e:
+        print(e)
+        print('你的复制链接可能失效啦!')
+        input('wait')
 
 
 if __name__ == '__main__':
